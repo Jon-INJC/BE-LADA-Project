@@ -1,7 +1,7 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class Sign_Up extends Application {
+public class MainStage extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Sign Up");
