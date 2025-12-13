@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="DriverSController">
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="DriverSController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.80003662109374" minWidth="10.0" prefWidth="307.99998779296874" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="647.2" minWidth="10.0" prefWidth="414.2000122070313" />
