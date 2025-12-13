@@ -5,14 +5,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="Main_Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main_Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -37,22 +39,28 @@
                <children>
                   <VBox maxWidth="350.0" spacing="10.0">
                      <children>
-                        <Label styleClass="Info_label" text="Name">
+                        <Label styleClass="Info_label" text="First Name">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <TextField fx:id="Info_Name" maxWidth="300.0" prefWidth="300.0">
+                        <TextField fx:id="F_Name_TXT" maxWidth="300.0" prefWidth="300.0">
                            <VBox.margin>
                               <Insets left="50.0" />
                            </VBox.margin>
                         </TextField>
-                        <Label layoutX="10.0" layoutY="10.0" styleClass="Info_label" text="User Name">
+                        <Label layoutX="10.0" layoutY="10.0" styleClass="Info_label" text="Last Name">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <TextField fx:id="Info_UName" layoutX="10.0" layoutY="28.0" maxWidth="300.0" prefWidth="300.0">
+                        <TextField fx:id="L_Name_TXT" layoutX="10.0" layoutY="28.0" maxWidth="300.0" prefWidth="300.0">
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="P_Number_TXT" layoutX="10.0" layoutY="74.0" styleClass="Info_label" text="Phone Number" />
+                        <TextField fx:id="Info_UName1" layoutX="60.0" layoutY="102.0" maxWidth="300.0" prefWidth="300.0">
                            <VBox.margin>
                               <Insets left="50.0" />
                            </VBox.margin>
@@ -62,7 +70,7 @@
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <TextField fx:id="Info_Email" layoutX="10.0" layoutY="71.0" maxWidth="300.0" prefWidth="300.0">
+                        <TextField fx:id="Email_TXT" layoutX="10.0" layoutY="71.0" maxWidth="300.0" prefWidth="300.0">
                            <VBox.margin>
                               <Insets left="50.0" />
                            </VBox.margin>
@@ -72,7 +80,7 @@
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <PasswordField fx:id="Info_Pass" maxWidth="300.0" prefWidth="300.0">
+                        <PasswordField fx:id="Pass_TXT" maxWidth="300.0" prefWidth="300.0">
                            <VBox.margin>
                               <Insets left="50.0" />
                            </VBox.margin>
@@ -82,11 +90,31 @@
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <PasswordField fx:id="Info_CoPass" layoutX="10.0" layoutY="157.0" maxWidth="300.0" prefWidth="300.0">
+                        <PasswordField fx:id="CO_Pas_TXT" layoutX="10.0" layoutY="157.0" maxWidth="300.0" prefWidth="300.0">
                            <VBox.margin>
                               <Insets left="50.0" />
                            </VBox.margin>
                         </PasswordField>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="ImageView_PIC" fitHeight="94.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="ImageView_ID" fitHeight="94.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#On_Pic_Upload" prefHeight="26.0" prefWidth="81.0" styleClass="Upload_BTN" text="Upload">
+                                 <HBox.margin>
+                                    <Insets left="150.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#On_Id_Upload" prefHeight="26.0" prefWidth="82.0" styleClass="Upload_BTN" text="Upload">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
                      </children>
                   </VBox>
                </children>
