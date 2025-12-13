@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class login  extends Application {
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Sign Up");
+        primaryStage.setTitle("Login");
         try{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         Parent root = loader.load();

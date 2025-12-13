@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class DriverS_Reg extends Application {
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Sign Up");
+        primaryStage.setTitle("Drivers Registration");
         try{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("DriverS_Reg.fxml"));
         Parent root = loader.load();
