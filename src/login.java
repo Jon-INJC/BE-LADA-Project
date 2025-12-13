@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class login extends Application {
+public class login  extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Sign Up");

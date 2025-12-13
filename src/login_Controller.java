@@ -6,13 +6,13 @@ import javafx.scene.control.TextField;
 public class login_Controller {
 
     @FXML
-    private TextField name;
+    private TextField P_Number_txt;
 
     @FXML
-    private PasswordField password;
+    private PasswordField Pass_txt;
 
     @FXML
-    void btnLoginisclicked(ActionEvent event) {
+    void On_login_BTN(ActionEvent event) {
 
     }
 
