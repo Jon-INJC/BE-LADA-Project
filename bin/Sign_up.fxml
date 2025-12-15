@@ -35,73 +35,65 @@
                   </Label>
                </children>
             </StackPane>
-            <StackPane prefHeight="150.0" prefWidth="200.0">
+            <StackPane prefHeight="475.0" prefWidth="512.0">
                <children>
-                  <VBox maxWidth="350.0" spacing="10.0">
+                  <VBox alignment="CENTER" maxWidth="400.0" prefHeight="422.0" prefWidth="400.0">
                      <children>
-                        <Label styleClass="Info_label" text="First Name">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </Label>
-                        <TextField fx:id="F_Name_TXT" maxWidth="300.0" prefWidth="300.0">
-                           <VBox.margin>
-                              <Insets left="50.0" />
-                           </VBox.margin>
-                        </TextField>
-                        <Label layoutX="10.0" layoutY="10.0" styleClass="Info_label" text="Last Name">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </Label>
-                        <TextField fx:id="L_Name_TXT" layoutX="10.0" layoutY="28.0" maxWidth="300.0" prefWidth="300.0">
-                           <VBox.margin>
-                              <Insets left="50.0" />
-                           </VBox.margin>
-                        </TextField>
-                        <Label layoutX="10.0" layoutY="74.0" styleClass="Info_label" text="Phone Number" />
-                        <TextField fx:id="P_Number_TXT" layoutX="60.0" layoutY="102.0" maxWidth="300.0" prefWidth="300.0">
-                           <VBox.margin>
-                              <Insets left="50.0" />
-                           </VBox.margin>
-                        </TextField>
-                        <Label layoutX="10.0" layoutY="53.0" styleClass="Info_label" text="Email">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </Label>
-                        <TextField fx:id="Email_TXT" layoutX="10.0" layoutY="71.0" maxWidth="300.0" prefWidth="300.0">
-                           <VBox.margin>
-                              <Insets left="50.0" />
-                           </VBox.margin>
-                        </TextField>
-                        <Label layoutX="10.0" layoutY="96.0" styleClass="Info_label" text="Password">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </Label>
-                        <PasswordField fx:id="Pass_TXT" maxWidth="300.0" prefWidth="300.0">
-                           <VBox.margin>
-                              <Insets left="50.0" />
-                           </VBox.margin>
-                        </PasswordField>
-                        <Label layoutX="10.0" layoutY="140.0" styleClass="Info_label" text="Confirm Password">
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </Label>
-                        <PasswordField fx:id="CO_Pas_TXT" layoutX="10.0" layoutY="157.0" maxWidth="300.0" prefWidth="300.0">
-                           <VBox.margin>
-                              <Insets left="50.0" />
-                           </VBox.margin>
-                        </PasswordField>
+                        <HBox maxWidth="450.0">
+                           <children>
+                              <VBox prefHeight="282.0" prefWidth="162.0" spacing="29.0">
+                                 <children>
+                                    <Label styleClass="Info_label" text="First Name" />
+                                    <Label styleClass="Info_label" text="Last Name" />
+                                    <Label styleClass="Info_label" text="Phone Number" />
+                                    <Label styleClass="Info_label" text="Email" />
+                                    <Label styleClass="Info_label" text="Password" />
+                                    <Label styleClass="Info_label" text="Confirm Password" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="20.0">
+                                 <children>
+                                    <TextField fx:id="F_Name_TXT" maxWidth="300.0" prefWidth="300.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="L_Name_TXT" layoutX="10.0" layoutY="28.0" maxWidth="300.0" prefWidth="300.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="P_Number_TXT" layoutX="60.0" layoutY="102.0" maxWidth="300.0" prefWidth="300.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="Email_TXT" layoutX="10.0" layoutY="71.0" maxWidth="300.0" prefWidth="300.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <PasswordField fx:id="Pass_TXT" maxWidth="300.0" prefWidth="300.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </PasswordField>
+                                    <PasswordField fx:id="CO_Pas_TXT" layoutX="10.0" layoutY="157.0" maxWidth="300.0" prefWidth="300.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </PasswordField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
                               <ImageView fx:id="ImageView_PIC" fitHeight="94.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                               <ImageView fx:id="ImageView_ID" fitHeight="94.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </HBox>
-                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+                        <HBox prefHeight="50.0" prefWidth="400.0" spacing="100.0">
                            <children>
                               <Button mnemonicParsing="false" onAction="#On_Pic_Upload" prefHeight="26.0" prefWidth="81.0" styleClass="Upload_BTN" text="Upload">
                                  <HBox.margin>
@@ -119,7 +111,7 @@
                   </VBox>
                </children>
             </StackPane>
-            <StackPane prefHeight="80.0">
+            <StackPane prefHeight="69.0" prefWidth="512.0">
                <children>
                   <Button fx:id="Sign_upBTN" mnemonicParsing="false" onAction="#On_sign_up" prefHeight="40.0" prefWidth="160.0" text="Sign-Up" />
                </children>
