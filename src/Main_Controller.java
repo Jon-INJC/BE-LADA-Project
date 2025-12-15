@@ -30,16 +30,13 @@ public class Main_Controller {
     private ImageView ImageView_PIC;
 
     @FXML
-    private TextField Info_UName1;
-
-    @FXML
     private TextField L_Name_TXT;
 
     @FXML
     private StackPane Left_StackPane;
 
     @FXML
-    private Label P_Number_TXT;
+    private TextField P_Number_TXT;
 
     @FXML
     private PasswordField Pass_TXT;
@@ -84,7 +81,7 @@ public class Main_Controller {
 
         if (selectedFile != null) {
             Image image = new Image(selectedFile.toURI().toString());
-            ImageView_ID.setImage(image);
+            ImageView_PIC.setImage(image);
         }
 
     }
