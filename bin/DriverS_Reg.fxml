@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DriverSController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.80003662109374" minWidth="10.0" prefWidth="307.99998779296874" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="647.2" minWidth="10.0" prefWidth="470.4" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="593.600048828125" minWidth="10.0" prefWidth="246.4000000000001" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="502.20000000000005" minHeight="10.0" prefHeight="33.199998092651356" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="637.6000019073487" minHeight="10.0" prefHeight="637.6000019073487" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="537.599983215332" minHeight="10.0" prefHeight="57.800042724609284" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="502.0" prefWidth="580.0" spacing="20.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <StackPane>
+               <children>
+                  <Label fx:id="Header" prefHeight="102.0" prefWidth="183.0" text="Drives Registration">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane>
+               <children>
+                  <HBox maxWidth="450.0" prefWidth="450.0">
+                     <children>
+                        <VBox maxWidth="-Infinity" prefHeight="299.0" prefWidth="176.0" spacing="25.0">
+                           <children>
+                              <Label maxWidth="300.0" prefWidth="300.0" styleClass="Labels" text="First Name">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label maxWidth="300.0" prefWidth="300.0" styleClass="Labels" text="Last Name">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label maxWidth="300.0" prefWidth="300.0" styleClass="Labels" text="Phone Number">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label maxWidth="300.0" prefWidth="300.0" styleClass="Labels" text="TIN">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label maxWidth="300.0" prefWidth="300.0" styleClass="Labels" text="Email">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label maxWidth="300.0" prefWidth="300.0" styleClass="Labels" text="Password">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label maxWidth="300.0" prefWidth="300.0" styleClass="Labels" text="Confurm Password">
+                                 <VBox.margin>
+                                    <Insets left="25.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="228.0" spacing="15.0">
+                           <children>
+                              <TextField fx:id="F_NameTXT" maxWidth="300.0" prefWidth="300.0" />
+                              <TextField fx:id="L_NameTXT" maxWidth="300.0" prefWidth="300.0" />
+                              <TextField fx:id="PH_NOTXT" maxHeight="-Infinity" maxWidth="300.0" prefWidth="300.0" />
+                              <TextField fx:id="TIN_TXT" maxWidth="300.0" prefWidth="300.0" />
+                              <TextField fx:id="Email_TXT" maxWidth="300.0" prefWidth="300.0" />
+                              <PasswordField fx:id="Pass_TXT" maxWidth="300.0" prefWidth="300.0" />
+                              <PasswordField fx:id="CO_PassTXT" maxWidth="300.0" prefWidth="300.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <VBox maxWidth="450.0" prefWidth="450.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="87.0" styleClass="Labels" text="Driver's License">
+                           <VBox.margin>
+                              <Insets left="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="ImageView" fitHeight="52.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="225.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="Upload_BTN" mnemonicParsing="false" onAction="#On_Upload_BTN" text="Upload">
+                           <VBox.margin>
+                              <Insets left="275.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="111.0" prefWidth="414.0">
+               <children>
+                  <Button fx:id="Reg_BTN" mnemonicParsing="false" onAction="#On_Reg_BTN" prefHeight="54.0" prefWidth="129.0" text="Register" />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
